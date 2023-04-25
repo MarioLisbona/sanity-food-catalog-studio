@@ -26,8 +26,6 @@ const Categories = () => {
 			.catch(console.error);
 	}, []);
 
-	console.log(categories)
-
 	return (
 		<div className="">
 			<h3 className="text-3xl font-bold text-center my-10 lg:my-5">

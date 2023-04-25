@@ -11,6 +11,9 @@ function urlFor(source) {
 }
 
 const Category = ({ category }) => {
+
+console.log(category)
+
 	return (
 		<div
 			className="bg-gray-100 rounded-xl p-10 w-full lg:w-1/3"
@@ -23,7 +26,7 @@ const Category = ({ category }) => {
 			/>
 			<h4 className="text-2xl py-3 font-bold capitalize">{category.title}</h4>
 			<p>{category.description}</p>
-			<Link to={"/filteredfoods/" + category.slug.current}>
+			<Link to={"/filteredfoods/" + category.title}>
 				<button
 					style={{ backgroundColor: "#FE043C" }}
 					className="rounded mt-3 px-5 py-2 text-white"

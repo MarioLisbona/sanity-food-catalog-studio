@@ -22,9 +22,9 @@ function App() {
 			</div>
 			<Routes>
 				<Route element={<Home />} exact path="/" />
-				<Route element={<About />} path="/About" />
-				<Route element={<Foods />} path="/Foods" />
-				<Route element={<FilteredFoods />} path="/FilteredFoods/:slug" />
+				<Route element={<About />} path="/about" />
+				<Route element={<Foods />} path="/foods" />
+				<Route element={<FilteredFoods />} path="/filteredfoods/:slug" />
 			</Routes>
 			{/* Footer Area */}
 			<div className="max-w-full">
