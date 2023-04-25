@@ -9,9 +9,12 @@ function urlFor(source) {
 }
 
 const Foods = () => {
+	//state to control the array of foods in a category
 	const [filteredFoods, setFilteredFoods] = useState(null);
 	const { slug } = useParams();
 
+	//querying the sanity data for all the foods in a category - uses slug from useParams()
+	//useEffect will be triggered every time the slug changes
 	useEffect(() => {
 		sanityClient
 			.fetch(
@@ -56,6 +59,7 @@ const Foods = () => {
 					All Foods🥗
 				</h3>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+					{/*  If foods is truthy Map over the filteredFoods array and create a Card for each object */}
 					{filteredFoods &&
 						filteredFoods.map((food) => (
 							<div

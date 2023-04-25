@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 
+//used to process the images from the sanity studio
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
@@ -11,8 +12,6 @@ function urlFor(source) {
 }
 
 const Category = ({ category }) => {
-
-console.log(category)
 
 	return (
 		<div

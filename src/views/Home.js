@@ -11,6 +11,7 @@ const Home = () => {
 					<p className="text-xl lg:text-2xl">What do you want?</p>
 				</div>
 				<div className="flex items-center lg:mt-0 mt-5 gap-3 lg:flex-row flex-col">
+					{/* Search bar has no functionality */}
 					<input
 						type="text"
 						className="w-full lg:w-80 p-2 border-2 border-gray-500 rounded focus:outline-none"

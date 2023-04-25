@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import sanityClient from "../client";
 import imageUrlBuilder from "@sanity/image-url";
 
+//used to process the images from the sanity studio
 const builder = imageUrlBuilder(sanityClient);
 
 function urlFor(source) {
 	return builder.image(source);
 }
 
-// import foodImage from "../images/protein/001.jpg";
-
+//query sanity data and return all the foods in the database
+//use setFoods to assign the returned array
 const Foods = () => {
 	const [foods, setFoods] = useState(null);
 
@@ -58,6 +59,7 @@ const Foods = () => {
 					All Foods🥗
 				</h3>
 				<div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+					{/* If foods is truthy Iterate over the foods array and create a card for each object */}
 					{foods &&
 						foods.map((food) => (
 							<div
