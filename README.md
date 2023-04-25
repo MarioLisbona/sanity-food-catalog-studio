@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## tutorial URL
+
+https://www.sanity.io/guides/create-a-single-page-application-with-react-and-sanity
+
 ## Available Scripts
 
 In the project directory, you can run:
