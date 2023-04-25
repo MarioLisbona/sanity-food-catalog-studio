@@ -26,6 +26,8 @@ const Categories = () => {
 			.catch(console.error);
 	}, []);
 
+	console.log(categories)
+
 	return (
 		<div className="">
 			<h3 className="text-3xl font-bold text-center my-10 lg:my-5">
@@ -34,7 +36,7 @@ const Categories = () => {
 
 			<div className="flex flex-col lg:flex-row lg:justify-center flex-wrap w-full gap-10 my-10">
 				{categories &&
-					categories.map((category) => (
+					categories.map(category => (
 						<Category key={category._id} category={category} />
 					))}
 			</div>
